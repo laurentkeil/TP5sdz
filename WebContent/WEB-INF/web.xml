@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:jsp="http://java.sun.com/xml/ns/javaee/jsp" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" version="3.0">
+  <jsp-config>
+    <jsp-property-group>
+      <url-pattern>*.jsp</url-pattern>
+      <include-prelude>/WEB-INF/taglibs.jsp</include-prelude>
+    </jsp-property-group>
+  </jsp-config>
+  <servlet>
+    <servlet-name>CreationClient</servlet-name>
+    <servlet-class>servlets.CreationClient</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>CreationClient</servlet-name>
+    <url-pattern>/CreationClient</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>CreationCommande</servlet-name>
+    <servlet-class>servlets.CreationCommande</servlet-class> 
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>CreationCommande</servlet-name>
+    <url-pattern>/CreationCommande</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>ListeClients</servlet-name>
+    <servlet-class>servlets.ListeClients</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ListeClients</servlet-name>
+    <url-pattern>/ListeClients</url-pattern>
+  </servlet-mapping> 
+  <servlet>
+    <servlet-name>ListeCommandes</servlet-name>
+    <servlet-class>servlets.ListeCommandes</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ListeCommandes</servlet-name>
+    <url-pattern>/ListeCommandes</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>SuppressionClient</servlet-name>
+    <servlet-class>servlets.SuppressionClient</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SuppressionClient</servlet-name>
+    <url-pattern>/SuppressionClient</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>SuppressionCommande</servlet-name>
+    <servlet-class>servlets.SuppressionCommande</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SuppressionCommande</servlet-name>
+    <url-pattern>/SuppressionCommande</url-pattern> 
+  </servlet-mapping>
+  
+</web-app>
